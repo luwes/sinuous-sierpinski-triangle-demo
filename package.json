@@ -1,0 +1,29 @@
+{
+  "name": "sinuous-sierpinski-triangle-demo",
+  "version": "0.0.1",
+  "description": "Sinuous implementation of Sierpinski Triangle",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "http-server -c-1 -p 8080 . "
+  },
+  "keywords": [
+    "sinuous",
+    "javascript",
+    "framework"
+  ],
+  "author": "Wesley Luyten",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.6.2",
+    "eslint": "^6.7.1",
+    "http-server": "^0.12.0",
+    "rollup": "1.21.4",
+    "rollup-plugin-babel": "4.3.3",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-size": "^0.2.0",
+    "rollup-plugin-terser": "5.1.2"
+  },
+  "dependencies": {
+    "sinuous": "^0.17.0"
+  }
+}
