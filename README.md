@@ -6,6 +6,8 @@ Run it [here](https://luwes.github.io/sinuous-sierpinski-triangle-demo/)
 
 ## Comparison
 
+[Solid](https://ryansolid.github.io/solid-sierpinski-triangle-demo/)
+
 [React 15](https://claudiopro.github.io/react-fiber-vs-stack-demo/stack.html)
 
 [React Fiber](https://claudiopro.github.io/react-fiber-vs-stack-demo/fiber.html)
