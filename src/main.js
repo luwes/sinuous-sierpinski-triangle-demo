@@ -43,19 +43,19 @@ const TriangleDemo = () => {
   requestAnimationFrame(update);
 
   const style = () => ({
-		transform: 'scaleX(' + scale() / 2.1 + ') scaleY(0.7) translateZ(0.1px)'
-	});
+    transform: 'scaleX(' + scale() / 2.1 + ') scaleY(0.7) translateZ(0.1px)'
+  });
 
   return html`
-	  <div class=container style=${style}>
-	    <${Triangle} x=${0} y=${0} s=${1000} seconds=${seconds} />
-	  </div>`;
+    <div class=container style=${style}>
+      <${Triangle} x=${0} y=${0} s=${1000} seconds=${seconds} />
+    </div>`;
 };
 
 const Triangle = ({ x, y, s, seconds }) => {
   if (s <= TARGET) {
     return html`
-    	<${Dot} x=${x - TARGET / 2} y=${y - TARGET / 2} s=${TARGET} text=${seconds} />
+      <${Dot} x=${x - TARGET / 2} y=${y - TARGET / 2} s=${TARGET} text=${seconds} />
     `;
   }
   s = s / 2;
@@ -80,11 +80,11 @@ const Triangle = ({ x, y, s, seconds }) => {
 const Dot = ({x, y, s, text}) => {
   const hover = observable(false);
   const onEnter = () => hover(true);
-	const onExit = () => hover(false);
+  const onExit = () => hover(false);
 
-	s = s * 1.3;
+  s = s * 1.3;
 
-	const style = () => ({
+  const style = () => ({
     width: s + 'px',
     height: s + 'px',
     left: x + 'px',
@@ -95,7 +95,7 @@ const Dot = ({x, y, s, text}) => {
   });
 
   return html`<div class=dot style=${style} onmouseenter=${onEnter} onmouseleave=${onExit}>
-  	${() => hover() ? '**' + text() + '**' : text()}
+    ${() => hover() ? '**' + text() + '**' : text()}
   </div>`;
 };
 
